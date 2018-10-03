@@ -1,0 +1,11 @@
+{
+  "name": "Weather-app-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jeremiahogutu/Weather-app-node.git",
+  "author": "Jeremiah Ogutu <jeremiahogutu@ptotonmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "yarn": "^1.10.1"
+  }
+}
