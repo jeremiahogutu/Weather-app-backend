@@ -6,6 +6,7 @@
   "author": "Jeremiah Ogutu <jeremiahogutu@ptotonmail.com>",
   "license": "MIT",
   "dependencies": {
+    "request": "^2.88.0",
     "yarn": "^1.10.1"
   }
 }
