@@ -1,2 +1,2 @@
-# Weather-app-node
-Weather app in node
+# Weather-app-backend
+Weather app using node-js
