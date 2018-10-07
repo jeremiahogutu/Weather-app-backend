@@ -15,7 +15,7 @@ const argv = yargs
     .argv;
 
 const encodedAddress = encodeURIComponent(argv.address);
-const geocodeUrl = `https://geocoder.api.here.com/6.2/geocode.json?searchtext=${encodedAddress}&app_id=gsYbZt1D0vdlrOheGMhh&app_code=-XfaXYriTAhKLHyxaU8_gg&gen=8`;
+const geocodeUrl = `https://geocoder.api.here.com/6.2/geocode.json?searchtext=${encodedAddress}&app_id=YOUR-APP-IDapp_code=YOUR-APP-CODE`;
 
 axios.get(geocodeUrl).then((body) => {
     if (body.data.Response === undefined) {
@@ -23,7 +23,7 @@ axios.get(geocodeUrl).then((body) => {
     }
     const longitude = body.data.Response.View[0].Result[0].Location.DisplayPosition.Longitude;
     const latitude = body.data.Response.View[0].Result[0].Location.DisplayPosition.Latitude;
-    const weatherUrl = `https://api.darksky.net/forecast/ddec24402bd1b9e72a119ae60c3cbd29/${latitude},${longitude}`;
+    const weatherUrl = `https://api.darksky.net/forecast/YOUR-API-KEY/${latitude},${longitude}`;
     console.log(body.data.Response.View[0].Result[0].Location.Address.Label);
     return axios.get(weatherUrl)
 }).then((response) => {
