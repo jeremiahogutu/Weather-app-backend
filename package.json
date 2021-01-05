@@ -6,7 +6,7 @@
   "author": "Jeremiah Ogutu <jeremiahogutu@ptotonmail.com>",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "request": "^2.88.0",
     "yargs": "^12.0.2",
     "yarn": "^1.10.1"
